@@ -1086,8 +1086,8 @@ Species = \frac{e^{(5.140×Sepal.Length - 27.831)}}{1+e^{(5.140×Sepal.Length - 
 ##     setosa versicolor virginica
 ##   0     45          6         0
 ##   1      5         44         0</code></pre>
-<pre class="r"><code># 正解率
-sum(diag(table(round(predict(object = glm_model, type = &quot;response&quot;)),data$Species)))/length(data$Species)</code></pre>
+<p>正解率</p>
+<pre class="r"><code>sum(diag(table(round(predict(object = glm_model, type = &quot;response&quot;)),data$Species)))/length(data$Species)</code></pre>
 <pre><code>## [1] 0.89</code></pre>
 <p><br /> 係数でネイピア数をべき乗するとオッズ比として使用できる。</p>
 <pre class="r"><code># 説明変数が名義尺度の方がわかりやすいので、タイタニック号での生死を客室級、性別、年齢から予測した例を示す。
